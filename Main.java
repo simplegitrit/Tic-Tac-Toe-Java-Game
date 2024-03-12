@@ -19,7 +19,7 @@ public class Main {
 
         while (!gameOver) {
             printBoard(board);
-            System.out.println("Player" + player + "enter:");
+            System.out.println("Player " + player + " enter:");
             int row = scanner.nextInt();
             int col = scanner.nextInt();
 
@@ -27,7 +27,7 @@ public class Main {
                 board[row][col] = player;
                 gameOver = haveWon(board, player);
                 if (gameOver) {
-                    System.out.println("Player" + player + "has won");
+                    System.out.println("Player " + player + " has won");
                 } else {
                     if (player == 'x') {
                         player = '0';
